@@ -31,7 +31,10 @@ namespace expressionTrees
 
             Console.WriteLine("----Prints the name of the variable for variable access expression--" +
                 "The base expression class contains the NodeProperty for the purpose" +
-                "that you may encounter many different no ");
+                "that you may encounter many different expression types and the base expression class returns " +
+                "an Expression Type which is an enumeration of the possible expression types " +
+                "Once you know the type of the node you perform the specific actions for the node and " +
+                "work with the specific types for that kind of expression ");
             
             Expression<Func<int,int>> addFive = a => a + 5;
 
@@ -43,6 +46,17 @@ namespace expressionTrees
                 Console.WriteLine(parameter.Type);
             }
 
+
+            // Demonstration for the static methods to create the expressions . These methods create an expression 
+            //node using the arguments supplied for its children 
+            //In this way you build up an expression from its leaf nodes .
+
+            // Addition is an add expression for the "1+2"
+            var one = Expression.Constant(1, typeof(int));
+            var two = Expression.Constant(2, typeof(int));
+            var addition = Expression.Add(one, two);
+
+            // The expression is then compiled into a delegate and invoked
 
         }
 
