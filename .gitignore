@@ -1,0 +1,54 @@
+#Visual studio 2022 .gitIgnore template
+#User-specific files
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+.vs/
+#Project-specific files
+*.csproj
+*.dbmdl
+*.jfm
+*.pfx
+*.pidb
+	
+*.userprefs
+*.usertasks
+*.vsix
+#Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Aa][Rr][Mm]86/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+#Visual Studio 2015/2017 cache/options directory
+.vscode/
+#Visual Studio 2017 auto generated files
+Generated\ Files/
+#Visual Studio 2017 auto generated files
+Generated Files/
+#Rider
+.idea/
+*.sln.iml
+# Logs and tmep files
+*.log
+*.tlog
+*.cache
+*.csproj.user
+*.user
+*.vspscc
+
+
+#NuGet Packages
+*.nupkg
+.nuget/
+# The packages folder can be ignored because of Package Restore
+**/packages/*
